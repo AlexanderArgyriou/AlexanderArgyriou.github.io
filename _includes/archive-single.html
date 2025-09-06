@@ -1,3 +1,16 @@
+<style>
+.post-thumbnail {
+  width: auto;
+  height: 10em;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+</style>
+
+{% if post.thumbnail %}
+  <img src="{{ post.thumbnail }}" alt="{{ post.title }} thumbnail" class="post-thumbnail">
+{% endif %}
+
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
