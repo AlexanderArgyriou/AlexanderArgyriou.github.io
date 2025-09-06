@@ -60,7 +60,9 @@ layout: default
         {% include page__date.html %}
       </footer>
 
-      {% include comments.html %}
+      {% unless page.name == "about.md" or page.name == "about.html" %}
+        {% include comments.html %}
+      {% endunless %}
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 

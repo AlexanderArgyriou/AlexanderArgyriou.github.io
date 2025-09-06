@@ -315,7 +315,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -335,4 +334,62 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: false
+      comments: false
+  # _java
+  - scope:
+      path: ""
+      type: java
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      toc_sticky: true
+      sidebar:
+        nav: "docs"
+  # _spring-boot
+  - scope:
+      path: ""
+      type: spring-boot
+    values:
+      layout: single
       author_profile: true
+      share: true
+      comments: true
+  # _quarkus
+  - scope:
+      path: ""
+      type: quarkus
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+    # _motorcycles
+  - scope:
+      path: ""
+      type: motorcycles
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+
+
+# Collections
+collections:
+  java:
+    output: true
+    permalink: /:collection/:path/
+  spring-boot:
+    output: true
+    permalink: /:collection/:path/
+  quarkus:
+    output: true
+    permalink: /:collection/:path/
+  motorcycles:
+    output: true
+    permalink: /:collection/:path/
+
