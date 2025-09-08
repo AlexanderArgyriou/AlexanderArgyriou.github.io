@@ -330,8 +330,8 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
-      sidebar:
-        nav: "post-sidebar"
+      # sidebar:
+      #   nav: "post-sidebar"
     # _pages
   - scope:
       path: ""
