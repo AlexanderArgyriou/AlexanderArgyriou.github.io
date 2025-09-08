@@ -115,7 +115,7 @@ analytics:
 # Site Author
 author:
   name             : "Alex G. Argyriou"
-  avatar           : "/assets/images/bio-photo-3.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Sr. Software Engineer, Tech Enthusiast. Passionate about coding, motorcycles, and lifelong learning."
   location         : "Ioannina, Epirus, Greece"
   email            : "alexander.k.argyriou@gmail.com"
@@ -328,13 +328,17 @@ defaults:
       comments: true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "post-sidebar"
     # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       comments: false
   # _java
   - scope:
@@ -343,7 +347,7 @@ defaults:
     values:
       layout: single
       read_time: false
-      author_profile: false
+      author_profile: true
       share: false
       comments: false
       toc_sticky: true

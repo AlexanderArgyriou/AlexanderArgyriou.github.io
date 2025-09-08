@@ -4,8 +4,9 @@ title: "About"
 permalink: /about/
 toc_sticky: true
 toc: true
-sidebar:
-  nav: "foo"
+author_profile: true
+# sidebar:
+#   nav: "foo"
 ---
 
 ## Intro

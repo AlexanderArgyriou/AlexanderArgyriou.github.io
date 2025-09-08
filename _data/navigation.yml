@@ -16,7 +16,7 @@ main:
   #   url: /sitemap/
 
 # _data/navigation.yml
-foo:
+post-sidebar:
   - title: "Parent Link 1"
     url: /parent-1-page-url/
     children:
